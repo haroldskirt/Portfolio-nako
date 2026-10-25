@@ -9,20 +9,37 @@ const SOCIALS = [
   { name: "Email",    icon: "mail",     url: "" }    // e.g. "mailto:you@example.com"
 ];
 
+
 const PROJECTS = [
-  { title: "LabWatch", image: "images/LabWatch.png",
+  {
+    title: "LabWatch",
+    image: "./LabWatch.png",
     description: "IoT-based smart monitoring system that detects selected IT laboratory policy violations, sends real-time alerts, and records incidents.",
-    tech: ["Python", "YOLO11", "PHP", "MySQL"], repo: "", demo: "",
-    uses: ["HTML5", "CSS3", "JavaScript", "PHP", "Python", "MySQL", "YOLO11", "OpenCV", "YuNet", "SFace", "VS Code", "XAMPP", "phpMyAdmin"] },
-  { title: "Smile Essential Dental Clinic", image: "images/SmileEssentials.png",
+    tech: ["Python", "YOLO11", "PHP", "MySQL"],
+    repo: "",
+    demo: "",
+    uses: ["HTML5", "CSS3", "JavaScript", "PHP", "Python", "MySQL", "YOLO11", "OpenCV", "YuNet", "SFace", "VS Code", "XAMPP", "phpMyAdmin"]
+  },
+  {
+    title: "Smile Essential Dental Clinic",
+    image: "./SmileEssentials.png",
     description: "Full-stack dental clinic management system built as a capstone project.",
-    tech: ["Full-Stack", "Web App"], repo: "", demo: "",
-    uses: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"] },
-  { title: "Daybreak Coffee", image: "images/DaybreakCoffee.png",
+    tech: ["Full-Stack", "Web App"],
+    repo: "",
+    demo: "",
+    uses: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"]
+  },
+  {
+    title: "Daybreak Coffee",
+    image: "./DaybreakCoffee.png",
     description: "A warm and modern café website concept highlighting signature drinks, menu items, and a welcoming coffeehouse experience.",
-    tech: ["HTML", "CSS", "JavaScript"], repo: "", demo: "",
-    uses: ["HTML5", "CSS3", "JavaScript"] }
+    tech: ["HTML", "CSS", "JavaScript"],
+    repo: "",
+    demo: "",
+    uses: ["HTML5", "CSS3", "JavaScript"]
+  }
 ];
+
 
 const SKILLS = [
   { title: "Front-End", icon: "</>", note: "Responsive, accessible interfaces.", items: ["HTML5", "CSS3", "JavaScript"] },
