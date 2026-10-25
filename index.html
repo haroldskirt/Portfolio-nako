@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harold C. Mendoza | IT Student &amp; Aspiring Web Developer</title>
+<meta name="description" content="Portfolio of Harold C. Mendoza, IT student and aspiring web developer.">
+<meta name="theme-color" content="#08090D">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Icon sprite (stroke icons) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></symbol>
+<symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo" aria-label="Harold Mendoza, back to top">HM<span>.</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#projects">Projects</a><a href="#skills">Skills</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero wrap" aria-labelledby="name">
+    <div class="portrait rise" style="--d:.05s">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="frame"><img src="images/profile.jpg" alt="Portrait of Harold C. Mendoza in a black suit and tie" width="900" height="900" fetchpriority="high"></div>
+      <span class="tag"><i aria-hidden="true"></i>BSIT Student</span>
+    </div>
+    <div class="intro">
+      <p class="eyebrow rise" style="--d:.15s">Hello, I'm</p>
+      <h1 class="name" id="name"><span class="rise" style="--d:.25s">HAROLD C.</span><span class="rise" style="--d:.35s">MENDOZA</span></h1>
+      <p class="role rise" style="--d:.45s">IT Student &amp; Aspiring Web Developer</p>
+      <p class="lead rise" style="--d:.55s">I'm passionate about web development and technology, and I enjoy turning ideas into clean, responsive digital experiences &mdash; from interfaces to the systems behind them.</p>
+      <div class="cta rise" style="--d:.65s">
+        <a class="btn" href="#projects">Explore My Projects <span aria-hidden="true">&rarr;</span></a>
+        <ul class="social" id="heroSocial" aria-label="Social profiles"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="sec wrap" aria-labelledby="projects-h">
+    <header class="sec-head reveal"><p class="eyebrow">Selected work</p><h2 id="projects-h">Projects</h2></header>
+    <div class="grid" id="projectGrid"></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="sec wrap" aria-labelledby="skills-h">
+    <header class="sec-head reveal"><p class="eyebrow">What I work with</p><h2 id="skills-h">Skills</h2></header>
+    <p class="sk-hint reveal">Select a skill to see the projects that use it.</p>
+    <div class="grid skills-grid" id="skillGrid"></div>
+    <!-- Opens under the cards when a skill is selected -->
+    <div class="sk-panel" id="skillPanel" aria-live="polite" inert><div class="sk-in"><div class="sk-box" id="skBox"></div></div></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>&copy; <span id="year"></span> Harold C. Mendoza</p>
+    <ul class="social" id="footSocial" aria-label="Social profiles"></ul>
+    <a href="#home" class="top">Back to top &uarr;</a>
+  </div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>
